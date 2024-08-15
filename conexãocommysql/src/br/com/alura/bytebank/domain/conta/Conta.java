@@ -31,8 +31,10 @@ public class Conta {
 
     @Override
     public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
+        if (this == o)
+            return true;
+        if (o == null || getClass() != o.getClass())
+            return false;
         Conta conta = (Conta) o;
         return numero.equals(conta.numero);
     }
